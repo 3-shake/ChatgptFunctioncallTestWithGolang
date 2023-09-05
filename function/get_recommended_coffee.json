@@ -1,0 +1,16 @@
+[
+    {
+        "name": "get_recommended_coffee",
+        "description": "Recommended coffee",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "producing_country": {
+                    "type": "string",
+                    "description": "Random country name but make sure its produce coffee."
+                }
+            },
+            "required": ["producing_country"]
+        }
+    }
+]

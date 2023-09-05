@@ -1,0 +1,29 @@
+[
+    {
+        "name": "get_official_documents",
+        "description": "Refer to the URL of the relevant document.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "document_URL": {
+                    "type": "array",
+                    "description": "URL of the relevant official document, even if there is more than one.",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "tag": {
+                    "type": "array",
+                    "description": "Useful tags to investigate. e.g.) AWS, EC2, payment method",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "document_URL",
+                "tag"
+            ]
+        }
+    }
+]
